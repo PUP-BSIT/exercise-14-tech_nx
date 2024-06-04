@@ -12,6 +12,16 @@ body {
   height: 100vh;
 }
 
+countries-list {
+  display: inline-block; 
+  margin: 10px; 
+  text-align: center;
+  }
+  
+  .country-img {
+    width: 50px;
+  }
+
 .position {
   flex-direction: column;
   margin: auto;
