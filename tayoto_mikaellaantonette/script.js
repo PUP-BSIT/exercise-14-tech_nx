@@ -67,7 +67,7 @@ function searchCountry() {
 
     .then(function (countryData) {
       let country = countryData[0];
-      let details = `h2>Country Details - ${country.name.common}</h2>
+      let details = `<h2>Country Details - ${country.name.common}</h2>
         <img src="${country.flags.svg}" alt="Flag of 
           ${country.name.common}" width="100">
       
