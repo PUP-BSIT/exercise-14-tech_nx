@@ -4,6 +4,17 @@ body {
   font-family: Arial, sans-serif;  
 }
 
+.countries-btn {
+  padding: 10px 10px;
+  font-size: 15px; 
+  background-color: lightpink; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: auto;
+}
+
 .split-right {
   height: 100%;
   display: flex; 
@@ -99,7 +110,7 @@ a:hover {
   grid-area: email;
 }
 
-.name {
+.name-contact {
   grid-area: name;
 }
 
@@ -125,7 +136,7 @@ a:hover {
 }
 
 .email, 
-.name, 
+.name-contact, 
 .subject, 
 .message, 
 .age, 
@@ -153,7 +164,7 @@ a:hover {
     display: grid;
       grid-template-areas: 
         "email"
-        "name"
+        "name-contact"
         "subject"
         "age"
         "copy"
@@ -175,7 +186,7 @@ a:hover {
   .contact>form {
     display: grid;
       grid-template-areas: 
-        "email name"
+        "email name-contact"
         "subject age"
         "copy copy"
         "message message"
