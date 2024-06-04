@@ -61,11 +61,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function searchCountry() {
-  let countryName = document.getElementById('country-Input').value.trim();
+  let countryName = document.getElementById('country_Input').value.trim();
   if (!countryName) {
-    document.getElementById('countryDetails').innerHTML =
+    document.getElementById('country_Details').innerHTML =
        '<p>Please enter a country name.</p>';
-    document.getElementById('sameRegionCountries').innerHTML = '';
+    document.getElementById('same_RegionCountries').innerHTML = '';
     return;
   }
 
