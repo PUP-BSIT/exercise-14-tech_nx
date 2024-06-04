@@ -8,12 +8,12 @@
   </head>
   <body>
     <h1>Countries of the World</h1>
-    <div class="search">
+    <div class="container">
       <input type="text" id="country_input" placeholder="Enter a country" />
-      <button id="search_button">Search</button>
+      <button id="countries_button" onclick="searchCountry()">Search</button>
     </div>
-    <div id="country_details"></div>
-    <div id="region_countries"></div>
+    <div class="details" id="country_details"></div>
+    <div class="same-region-countries" id="same_countries"></div>
     <script src="script.js"></script>
   </body>
 </html>
