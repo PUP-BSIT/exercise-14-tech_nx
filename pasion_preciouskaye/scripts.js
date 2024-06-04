@@ -113,7 +113,7 @@ function searchCountry() {
       let sameRegionCountriesList = regionData.map(function(c) {
         return `
          <div style="display: inline-block; margin: 10px; text-align: center;">
-          <img src="${c.flags.svg}" alt="Flag of ${c.name.common}" width="50">
+          <img src="${c.flags.svg}" alt="Flag of ${c.name.common}">
             <p>${c.name.common}</p>
           </div>
         `;
