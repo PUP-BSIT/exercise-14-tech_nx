@@ -68,30 +68,30 @@ function searchCountry() {
     .then(function (countryData) {
       let country = countryData[0];
       let details = `h2>Country Details - ${country.name.common}</h2>
-      <img src="${country.flags.svg}" alt="Flag of 
-        ${country.name.common}" width="100">
-        
-      <p><strong>Area:</strong> 
-        ${country.area?country.area.toLocaleString()+
-          "square kilometers":"N/A"}
-      </p>
-
-      <p><strong>Languages:</strong> 
-        ${country.languages ? Object.values(country.languages)
-          .join(", ") : "N/A"}
-      </p>
-
-      <p><strong>Subregion:</strong> 
-        ${country.subregion ? country.subregion : "N/A"}
-      </p>
-
-      <p><strong>Capital:</strong> 
-        ${country.capital ? country.capital[0] : "N/A"}
-      </p>
-
-      <p><strong>Timezones:</strong> 
-        ${country.timezones ? country.timezones.join(", ") : "N/A"}
-      </p>`;
+        <img src="${country.flags.svg}" alt="Flag of 
+          ${country.name.common}" width="100">
+      
+        <p><strong>Area:</strong> 
+          ${country.area?country.area.toLocaleString()+
+            "square kilometers":"N/A"}
+        </p>
+      
+        <p><strong>Languages:</strong> 
+          ${country.languages ? Object.values(country.languages)
+            .join(", ") : "N/A"}
+        </p>
+      
+        <p><strong>Subregion:</strong> 
+          ${country.subregion ? country.subregion : "N/A"}
+        </p>
+      
+        <p><strong>Capital:</strong> 
+          ${country.capital ? country.capital[0] : "N/A"}
+        </p>
+      
+        <p><strong>Timezones:</strong> 
+          ${country.timezones ? country.timezones.join(", ") : "N/A"}
+        </p>`;
 
       document.getElementById("country_details").innerHTML = details;
       return fetch("https://restcountries.com/v3.1/region/" + country.region);
@@ -109,11 +109,11 @@ function searchCountry() {
       var sameRegionCountriesList = regionData
         .map(function (c) {
           return `
-          <div class="country-card">
-            <img src="${c.flags.svg}" alt="Flag of ${c.name.common}" 
-              width="50">
-            <p>${c.name.common}</p>
-          </div>`;
+            <div class="country-card">
+              <img src="${c.flags.svg}" alt="Flag of ${c.name.common}" 
+                width="50">
+              <p>${c.name.common}</p>
+            </div>`;
         }) .join("");
 
       document.getElementById("same_countries").innerHTML = 
