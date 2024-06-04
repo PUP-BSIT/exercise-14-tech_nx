@@ -17,13 +17,13 @@ function writeNewComment() {
 }
 
 function displayComments() {
-  let commentList = document.getElementById('comment_list');
-  commentList.innerHTML = '';
+  let comment_list = document.getElementById('comment_list');
+  comment_list.innerHTML = '';
 
   comments.forEach(comment => {
     let li = document.createElement('li');
     li.innerHTML = `${comment.comment} - <b>${comment.name}</b> <br><small>${new Date(comment.timestamp).toLocaleString()}</small>`;
-    commentList.appendChild(li);
+    comment_list.appendChild(li);
   });
 }
 
