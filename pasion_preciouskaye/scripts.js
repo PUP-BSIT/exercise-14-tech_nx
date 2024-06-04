@@ -63,9 +63,9 @@ document.addEventListener('DOMContentLoaded', function () {
 function searchCountry() {
   let countryName = document.getElementById('country_Input').value.trim();
   if (!countryName) {
-    document.getElementById('country_Details').innerHTML =
+    document.getElementById('country_details').innerHTML =
        '<p>Please enter a country name.</p>';
-    document.getElementById('same_RegionCountries').innerHTML = '';
+    document.getElementById('same_regioncountries').innerHTML = '';
     return;
   }
 
