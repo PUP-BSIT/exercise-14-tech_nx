@@ -82,20 +82,31 @@ function searchCountry() {
       })
       .then(function (countryData) {
         let country = JSON.parse(countryData)[0];
-        let details = `
-          <h2>Country Details - ${country.name.common}</h2>
-          <img src="${country.flags.svg}" alt="Flag of ${country.name.common}
-                    " width="100">
-          <p><strong>Area:</strong> ${country.area ? 
-            country.area.toLocaleString() + " square kilometers" : "N/A"}</p>
-          <p><strong>Languages:</strong> ${country.languages ? 
-            Object.values(country.languages).join(", ") : "N/A"}</p>
+        let details = `<h2>Country Details - ${country.name.common}</h2>
+          <img src="${country.flags.svg}" alt="Flag of
+             ${country.name.common}" width="100">
+
+          <p><strong>Area:</strong> 
+            ${country.area ? country.area.toLocaleString() + 
+              " square kilometers" : "N/A"}
+          </p>
+
+          <p><strong>Languages:</strong> 
+            ${country.languages ? Object.values(country.languages)
+                .join(", ") : "N/A"}
+          </p>
+
           <p><strong>Subregion:</strong> ${country.subregion ? 
-            country.subregion : "N/A"}</p>
-          <p><strong>Capital:</strong> ${country.capital ?
-             country.capital[0] : "N/A"}</p>
-          <p><strong>Timezones:</strong> ${country.timezones ? 
-            country.timezones.join(", ") : "N/A"}</p>
+            country.subregion : "N/A"}
+          </p>
+
+          <p><strong>Capital:</strong>
+            ${country.capital ? country.capital[0] : "N/A"}
+          </p>
+
+          <p><strong>Timezones:</strong> 
+            ${country.timezones ? country.timezones.join(", ") : "N/A"}
+          </p>
         `;
   
         document.getElementById("countryDetails").innerHTML = details;
