@@ -39,7 +39,8 @@ h2 {
   border: 10px solid rgba(51, 113, 227, 0.686);
   background-color: rgba(0, 174, 255, 0.586);
   width: 350px;
-  gap: 5px;
+  gap: 7px;
+  margin: 10px auto;
   padding: 7px;
 }
 

@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   const commentForm = document.getElementById('comment');
-  const commentsList = document.getElementById('comments-list');
-  const sortAscButton = document.getElementById('sort-asc');
-  const sortDescButton = document.getElementById('sort-desc');
+  const commentsList = document.getElementById('comments_list');
+  const sortAscButton = document.getElementById('sort_asc');
+  const sortDescButton = document.getElementById('sort_desc');
   const nameInput = document.getElementById('name');
   const commentInput = document.getElementById('ycomment');
   const submitButton = document.getElementById('button_comment');
