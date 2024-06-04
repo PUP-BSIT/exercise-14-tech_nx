@@ -17,7 +17,7 @@ function writeNewComment() {
 }
 
 function displayComments() {
-  let commentList = document.getElementById('commentList');
+  let commentList = document.getElementById('comment_list');
   commentList.innerHTML = '';
 
   comments.forEach(comment => {
@@ -44,7 +44,7 @@ document.getElementById('desc_button').addEventListener('click', function() {
   sortComments('desc');
 });
 
-document.getElementById('commentForm').addEventListener('submit', function(event) {
+document.getElementById('comment_form').addEventListener('submit', function(event) {
   event.preventDefault();
   addComment();
 });
