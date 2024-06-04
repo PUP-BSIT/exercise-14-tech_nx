@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function displayComments() {
-      let commentList = document.querySelector("#comments-section");
+      let commentList = document.querySelector("#comments_section");
       commentList.innerHTML = "";
 
       comments.forEach((comment) => {
