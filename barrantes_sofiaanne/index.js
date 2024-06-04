@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
       button.disabled = !(name.length && comment.length);
   }
 
-  document.querySelector("#comment-form").addEventListener("submit", addComment);
+  document.querySelector("#comments-form").addEventListener("submit", addComment);
   document.querySelector("#fname").addEventListener("input", comment_btn);
   document.querySelector("#comment").addEventListener("input", comment_btn);
   document.querySelector("#asc_btn").addEventListener("click", function() {

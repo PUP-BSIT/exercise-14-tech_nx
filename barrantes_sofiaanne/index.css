@@ -2,30 +2,29 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    
 }
 
 .split-right {
     height: 100%;
-    display: flex; 
-    background-color: #ffd1dc; 
-    align-items:center; 
+    display: flex;
+    background-color: #ffd1dc;
+    align-items: center;
     padding: 20px;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.slide { 
+.slide {
     max-width: auto;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     padding: 20px;
     background-color: white;
     border: 10px solid white;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .slide h2 {
-    margin-top: 0; 
+    margin-top: 0;
 }
 
 #name {
@@ -41,9 +40,9 @@ body {
 }
 
 .split-left {
-    height: 100vh; 
+    height: 100vh;
     flex: 1;
-    display: flex; 
+    display: flex;
     justify-content: center;
     background-image: url("https://f8n-production-collection-assets.imgix.net/0x9937D9A7205238834F6aE86D5CbbE60a887cFb6F/1/nft.png?auto=format%2Ccompress&q=70&h=1200&w=1200");
     background-size: cover;
@@ -52,7 +51,7 @@ body {
 
 ul {
     padding-left: 20px;
-    margin: 0; 
+    margin: 0;
 }
 
 a {
@@ -79,21 +78,21 @@ a:hover {
 }
 
 .gallery {
-    text-align: center; 
-    background-color: white ;
+    text-align: center;
+    background-color: white;
 }
 
 .gallery-item {
-    display: inline-block; 
-    margin: 10px; 
-    width: 175px; 
-    box-sizing: border-box; 
+    display: inline-block;
+    margin: 10px;
+    width: 175px;
+    box-sizing: border-box;
 }
 
 .gallery-item img {
-    width: 100%; 
-    height: auto; 
-    max-width: 150px; 
+    width: 100%;
+    height: auto;
+    max-width: 150px;
 }
 
 .email {
@@ -125,35 +124,34 @@ a:hover {
     grid-area: copy;
 }
 
-.email, 
-.Name, 
-.subject, 
-.message, 
-.age, 
+.email,
+.name,
+.subject,
+.message,
+.age,
 .copy {
-     border: 3px solid white; 
-     padding: 20px; 
-     text-align: start; 
-    
+    border: 3px solid white;
+    padding: 20px;
+    text-align: start;
 }
 
 .contact {
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 10px; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     border-color: white;
-    box-sizing: border-box; 
-    width: 100%; 
+    box-sizing: border-box;
+    width: 100%;
     background-color: #ffd1dc;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 @media (max-width: 426px) {
     .contact > form {
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             "email"
             "name"
             "subject"
@@ -174,9 +172,9 @@ a:hover {
 }
 
 @media (min-width: 427px) {
-    .contact>form {
+    .contact > form {
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             "email name"
             "subject age"
             "copy copy"
@@ -193,11 +191,11 @@ a:hover {
     grid-area: fname;
 }
 
-.com, 
+.com,
 .fname {
-    border:3px solid white;
+    border: 3px solid white;
     padding: 20px;
-    text-align:start;
+    text-align: start;
 }
 
 h2 {
@@ -209,9 +207,9 @@ h2 {
     flex-direction: column;
     text-align: start;
     align-items: center;
-    padding: 50px; 
-    box-sizing: border-box; 
-    width:auto;
+    padding: 50px;
+    box-sizing: border-box;
+    width: auto;
 }
 
 .com-b {
