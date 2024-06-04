@@ -16,7 +16,7 @@ form.addEventListener("submit", function (event) {
 
   const newComment = document.createElement("li");
   newComment.innerHTML = `<strong>${name}</strong> - ${comment} - 
-  <time datetime="${date}">${date.toLocaleString()}</time>`;
+    <time datetime="${date}">${date.toLocaleString()}</time>`;
 
   const listItem = document.createElement("li");
   listItem.appendChild(newComment);
@@ -25,17 +25,6 @@ form.addEventListener("submit", function (event) {
   commentInput.value = "";
   form.querySelector('button[type="submit"]').disabled = false;
 });
-
-function comment() {
-  const name = nameInput.value.trim();
-  const comment = commentInput.value.trim();
-
-  if (name || comment) {
-    form.querySelector('button[type="submit"]').disabled = false;
-  } else {
-    form.querySelector('button[type="submit"]').disabled = true;
-  }
-}
 
 function sortComments(ascending) {
   const comments = Array.from(commentList.children);
