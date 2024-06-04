@@ -10,7 +10,6 @@ form.addEventListener("submit", function (event) {
   const name = nameInput.value.trim();
   const comment = commentInput.value.trim();
   const date = new Date();
-  
   if (!name || !comment) {
     return;
   }
