@@ -78,7 +78,7 @@ button {
   background: snow;
 }
 
-#countries-button {
+#countries_button {
   background-color: #b05deb;
   color: white;
   border: none;
@@ -91,7 +91,7 @@ button {
   margin-top: 20px;
 }
 
-#countries-button:hover {
+#countries_button:hover {
   background-color: #c48de4;
 }
 
