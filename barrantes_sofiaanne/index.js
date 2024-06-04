@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function displayComments() {
-      let commentList = document.querySelector("#commentsSection");
+      let commentList = document.querySelector("#comments-section");
       commentList.innerHTML = "";
 
       comments.forEach((comment) => {
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
       button.disabled = !(name.length && comment.length);
   }
 
-  document.querySelector("#commentForm").addEventListener("submit", addComment);
+  document.querySelector("#comment-form").addEventListener("submit", addComment);
   document.querySelector("#fname").addEventListener("input", comment_btn);
   document.querySelector("#comment").addEventListener("input", comment_btn);
   document.querySelector("#asc_btn").addEventListener("click", function() {

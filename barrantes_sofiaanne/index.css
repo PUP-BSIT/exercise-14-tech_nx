@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    
 }
 
 .split-right {
@@ -99,8 +100,8 @@ a:hover {
     grid-area: email;
 }
 
-.Name {
-    grid-area: Name;
+.name {
+    grid-area: name;
 }
 
 .subject {
@@ -124,10 +125,16 @@ a:hover {
     grid-area: copy;
 }
 
-.email, .Name, .subject, .message, .age, .copy {
-    border:3px solid white;
-    padding: 20px;
-    text-align:start;
+.email, 
+.Name, 
+.subject, 
+.message, 
+.age, 
+.copy {
+     border: 3px solid white; 
+     padding: 20px; 
+     text-align: start; 
+    
 }
 
 .contact {
@@ -148,17 +155,19 @@ a:hover {
         display: grid;
         grid-template-areas: 
             "email"
-            "Name"
+            "name"
             "subject"
             "age"
             "copy"
             "message"
             "submit";
     }
+
     .split-right {
         display: flex;
         flex-direction: column;
     }
+
     .section-container {
         width: auto;
     }
@@ -168,7 +177,7 @@ a:hover {
     .contact>form {
         display: grid;
         grid-template-areas: 
-            "email Name"
+            "email name"
             "subject age"
             "copy copy"
             "message message"
@@ -184,7 +193,8 @@ a:hover {
     grid-area: fname;
 }
 
-.com, .fname {
+.com, 
+.fname {
     border:3px solid white;
     padding: 20px;
     text-align:start;
