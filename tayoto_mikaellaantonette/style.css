@@ -78,6 +78,23 @@ button {
   background: snow;
 }
 
+#countries-button {
+  background-color: #b05deb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: bold;
+  width: 150px;
+  height: 55px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#countries-button:hover {
+  background-color: #c48de4;
+}
+
 .contact-form {
   background-color: #e1afd1;
 }
